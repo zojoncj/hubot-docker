@@ -21,8 +21,8 @@ WORKDIR /hubot
 # Install hubot
 RUN yo hubot --owner="zojoncj@oregonstate.edu" --name="Bubba" --description="Testing hubot in Docker" --defaults
 
-RUN npm install hubot-slack --save && npm install
-RUN npm install hubot-auth --save && npm install
+RUN npm install hubot-slack@3.4.2 --save && npm install
+RUN npm install hubot-auth@1.2.0 --save && npm install
 RUN npm install hubot-reload-scripts --save && npm install
 
 ADD hubot/external-scripts.json /hubot/
