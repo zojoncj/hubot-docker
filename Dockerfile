@@ -19,7 +19,7 @@ USER	hubot
 WORKDIR /hubot
 
 # Install hubot
-RUN yo hubot --owner="zojoncj@oregonstate.edu" --name="Bubba" --description="Testing hubot in Docker" --defaults
+RUN yo hubot --owner="zojoncj@oregonstate.edu" --name="benny_bot" --description="Testing hubot in Docker" --defaults
 
 RUN npm install hubot-slack@3.4.2 --save && npm install
 RUN npm install hubot-auth@1.2.0 --save && npm install
