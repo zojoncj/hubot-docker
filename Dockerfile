@@ -29,6 +29,8 @@ ADD hubot/external-scripts.json /hubot/
 
 ADD hubot/scripts/ztest.coffee /hubot/scripts/
 
+EXPOSE 8080
+
 CMD ["bin/hubot", "--adapter", "slack"]
 
 
